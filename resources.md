@@ -1,3 +1,5 @@
+# Resources
+
 # Artistic inspiration
 https://en.wikipedia.org/wiki/Tarot -- information about tarot cards
 
@@ -19,3 +21,4 @@ https://www.codespeedy.com/how-to-pick-a-random-card-in-python/ -- a good idea o
 https://circuitstream.com/blog/ar-business-card-tutorial/ -- AR cards in unity
 
 https://www.youtube.com/watch?v=RBHdY842V6U -- Tarot cards in javascript
+
