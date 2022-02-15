@@ -1,4 +1,5 @@
 Aesthetic links
+
 https://www.mindbodygreen.com/articles/what-cards-in-traditional-tarot-deck-mean ( classification & symbol of tarot )
 
 
