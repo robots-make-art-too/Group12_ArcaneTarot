@@ -1,4 +1,4 @@
-#Artistic Links#
+# Artistic Links
 
 1. https://www.mindbodygreen.com/articles/what-cards-in-traditional-tarot-deck-mean -classification & symbol of tarot 
 2. https://www.wikihow.com/Set-up-Tarot-Cards - tarot guide
@@ -7,8 +7,7 @@
 5. https://www.duranimation.com/animated-tarot-cards - tarot card animation idea
 
 
-
-#Technical Links#
+# Technical Links
 
 1. https://www.astrology.com/tarot/card-meanings  -Example web of tarot card's intro insert
 2. https://www.handmethatpencil.com/blog/2019/10/28/lptblk1xocp9kkmmtmv3ga276hrp4p -Design process and preparation
