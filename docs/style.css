@@ -1,0 +1,7 @@
+body{
+    text-align: center
+}
+
+#card1, #card2, #card3{
+    width: 25%
+}

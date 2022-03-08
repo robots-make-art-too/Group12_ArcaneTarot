@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Arcane Tarot</title>
-</head>
+    <head>
+        <title>Arcane Tarot</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="js/tarot.js"></script>
+    </head>
 
-<body>
-Content
-</body>
+    <body>
+        <h1>Tarot Reading</h1>
+        <div id="cards">
+            <img src="img/card_back.png" id="card1">
+            <img src="img/card_back.png" id="card2">
+            <img src="img/card_back.png" id="card3">
+        </div>
+        <br/>
+        <button id="draw" onclick="drawCard()">Flip cards</button>
+    </body>
 
 </html>
