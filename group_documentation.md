@@ -15,10 +15,10 @@ Christos -- AR Functionality
 # Assets Checklist
 
 
-[x] -- Cards graphics are in production
+[x] Cards graphics are in production
   - 8 Of Swords and Up have been illustrated and modelled; can be found in asset folder
 
-[x] -- [QR Code](https://github.com/robots-make-art-too/Group12_ArcaneTarot/blob/main/Assets/Markers%20and%20QR%20Codes/ArcaneTarotQR.png) for the group page
+[x] [QR Code](https://github.com/robots-make-art-too/Group12_ArcaneTarot/blob/main/Assets/Markers%20and%20QR%20Codes/ArcaneTarotQR.png) for the group page
 
-[] -- Unique markers for each card
+[] Unique markers for each card
 
