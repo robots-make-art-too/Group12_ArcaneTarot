@@ -9,6 +9,6 @@
 ```
 Jasmine -- 2D & 3D Assets, CSS
 Yuchen -- 2D & 3D Assets
-Ian -- HTML, Setting up the 'gh-pages'
-Christos -- AR
+Ian -- HTML, Setting up the 'gh-pages' functionality
+Christos -- AR Functionality
 ```
