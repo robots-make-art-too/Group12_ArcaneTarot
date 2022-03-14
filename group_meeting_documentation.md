@@ -8,7 +8,7 @@
 
 ```
 Jasmine -- 2D & 3D Assets, CSS
-Yuchen 2D -- & 3D Assets
+Yuchen -- 2D & 3D Assets
 Ian -- HTML, Setting up the 'gh-pages'
 Christos -- AR
 ```
