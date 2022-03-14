@@ -10,7 +10,7 @@
 ```
 Jasmine -- 2D & 3D Assets, CSS
 Yuchen -- 2D & 3D Assets
-Ian -- HTML, Setting up the 'gh-pages' functionality
+Ian -- HTML, JS, Setting up the 'gh-pages' 
 Christos -- AR Functionality
 ```
 ## Assets Checklist
