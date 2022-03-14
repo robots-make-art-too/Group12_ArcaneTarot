@@ -1,3 +1,4 @@
+# Group_12 Arcane Tarot README & Documentation
 # Discussion Log
 
 - Discussed how the markers and cards could be seen and distributed with mass-audience in mind.  Pondered making physical cards with the markers on them to distribute, or to place around campus.
