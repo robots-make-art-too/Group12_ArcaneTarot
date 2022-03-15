@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arcane Tarot</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="js/tarot.js"></script>
+    </head>
+
+    <body>
+        <h1>Tarot Reading</h1>
+        <div id="cards">
+            <img src="img/card_back.png" id="card1" onclick="card1desc()">
+            <img src="img/card_back.png" id="card2" onclick="card2desc()">
+            <img src="img/card_back.png" id="card3" onclick="card3desc()">
+        </div>
+        <br/>
+        <button id="draw" onclick="drawCard()">Flip cards</button>
+        <button id="reset" onclick="reset()">Reset cards</button>
+
+        <div id="imgPopup" class="popup">
+            <div class="popup-content">
+                <img src="img/card_back.png" id="enlargeCard">
+                <h4 id="title"></h4>
+                <p id="description"></p>
+            </div>
+        </div>
+    </body>
+
+</html>
