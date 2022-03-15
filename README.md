@@ -23,3 +23,4 @@ Christos -- AR Functionality
 
 [x] Unique markers for each card
 
+[Cards 8-14 Speedpaint](https://www.youtube.com/shorts/PHhMG-IjMvQ)
