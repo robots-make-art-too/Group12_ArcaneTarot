@@ -1,5 +1,11 @@
 Cards
 (Ten Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/glb/TenOfSwords.glb
+(Queen Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/QueenOfSwords.glb
+(Page Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/PageOfSwords.glb
+(Nine Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/NineOfSwords.glb
+(Knight Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/KnightOfSwords.glb
+(King Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/KingOfSwords.glb
+(Eight Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/EightOfSwords.glb
 
 Markers
 (Two Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-TwoOfSwords.patt
