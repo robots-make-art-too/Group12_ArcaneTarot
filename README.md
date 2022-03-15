@@ -21,5 +21,5 @@ Christos -- AR Functionality
 
 [x] [QR Code](https://github.com/robots-make-art-too/Group12_ArcaneTarot/blob/main/Assets/Markers%20and%20QR%20Codes/ArcaneTarotQR.png) for the group page
 
-[] Unique markers for each card
+[x] Unique markers for each card
 
