@@ -116,7 +116,7 @@ function modalDisplay(name, description, image){
     document.getElementById("title").innerHTML = name
     document.getElementById("description").innerHTML = description
     document.getElementById("imgPopup").style.display = "block";
-    
+
 }
 
 window.onclick = function(event){
