@@ -1,0 +1,18 @@
+Cards
+(Ten Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/glb/TenOfSwords.glb
+
+Markers
+(Two Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-TwoOfSwords.patt
+(three Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-ThreeOfSwords.patt
+(Four Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-FourOfSwords.patt
+(five Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-FiveOfSwords.patt
+(Six Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-SixOfSwords.patt
+(Seven Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-SevenOfSwords.patt
+(Eight Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-EightOfSwords.patt
+(Ten Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-TenOfSwords.patt
+(Queen Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-QueenOfSwords.patt
+(Page Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-PageOfSwords.patt
+(Nine Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-NineOfSwords.patt
+(Knight Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-KnightOfSwords.patt
+(King Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-KingOfSwords.patt
+(Ace Of Swords) -> https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/Markers/pattern-AceOfSwords.patt
