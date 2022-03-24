@@ -25,3 +25,8 @@ Christos -- AR Functionality
 [x] Unique markers for each card
 
 [Cards 8-14 Speedpaint](https://www.youtube.com/shorts/PHhMG-IjMvQ)
+
+## AR Demos-Over-The-Shoulder
+
+[Test1](https://cdn.discordapp.com/attachments/941026046726262878/953376904222740501/unknown.png)
+[Test2](https://cdn.discordapp.com/attachments/941026046726262878/953383011246813214/unknown.png)
