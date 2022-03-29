@@ -4,6 +4,7 @@
         <title>Arcane Tarot</title>
         <link href="style.css" rel="stylesheet">
         <script src="js/tarot.js"></script>
+        <script src="js/landing.js"></script>
     </head>
 
     <body>
@@ -16,18 +17,8 @@
         <br/>
         <button class="button" id="draw" onclick="drawCard()">Flip cards</button>
         <button class="button" id="reset" onclick="reset()">Reset cards</button>
-        <button type="button" class="button" onclick="openTab('AR.html')">Open AR</button>
-        
-        <script>
-            function openTab(url) {
-                const link = document.createElement('a');
-                link.href = url;
-                link.target = '_blank';
-                document.body.appendChild(link);
-                link.click();
-                link.remove();
-            }
-        </script>
+        <button type="button" class="button" onclick="openTab('pages/marker-based/AR.html')">Open AR</button>
+
 
         <div id="imgPopup" class="popup">
             <div class="popup-content">
