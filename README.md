@@ -8,7 +8,7 @@
 ## Work Distribution
 
 ```
-Jasmine -- 2D & 3D Assets, CSS
+Jasmine -- 2D & 3D Assets, CSS, AR Functionality
 Yuchen -- 2D & 3D Assets
 Ian -- HTML, JS, Setting up the 'gh-pages' 
 Christos -- AR Functionality
