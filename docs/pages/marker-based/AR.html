@@ -3,12 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
 		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 		<script src="https://rawcdn.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-		<script type="text/javascript" src="js/gamerState.js"></script>
-		<script type="text/javascript" src="js/interaction.js"></script>
-		<script type="text/javascript" src="js/models.js"></script>
+
 	</head>
 
 		<body style='margin : 0px; overflow: hidden;'>
@@ -23,20 +20,20 @@
 				cursor="rayOrigin: mouse" accepts-clicks>
 
 			<a-assets>
-				<a-asset-item id="AceOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/AceOfSwords.glb"></a-asset-item>
-                <a-asset-item id="TwoOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/TwoOfSwords.glb"></a-asset-item>
-                <a-asset-item id="ThreeOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/ThreeOfSwords.glb"></a-asset-item>
-                <a-asset-item id="FourOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/FourOfSwords.glb"></a-asset-item>
-                <a-asset-item id="FiveOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/FiveOfSwords.glb"></a-asset-item>
-				<a-asset-item id="SixOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/SixOfSwords.glb"></a-asset-item>
-                <a-asset-item id="SevenOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/73b1e26324f517906cf4102974b49713c23b8980/Assets/glb/SevenOfSwords.glb"></a-asset-item>
-                <a-asset-item id="EightOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/EightOfSwords.glb"></a-asset-item>
-                <a-asset-item id="NineOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/NineOfSwords.glb"></a-asset-item>
-                <a-asset-item id="TenOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/TenOfSwords.glb"></a-asset-item>
-                <a-asset-item id="KnightOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/KnightOfSwords.glb"></a-asset-item>
-                <a-asset-item id="QueenOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/QueenOfSwords.glb"></a-asset-item>
-                <a-asset-item id="KingOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/KingOfSwords.glb"></a-asset-item>
-                <a-asset-item id="PageOfSwords" src="https://rawcdn.githack.com/robots-make-art-too/Group12_ArcaneTarot/78176769a2d2da17efd16b0a9ccaf3da7d75f4ed/Assets/glb/PageOfSwords.glb"></a-asset-item>
+				<a-asset-item id="AceOfSwords" src="Assets\glb\AceOfSwords.glb"></a-asset-item>
+                <a-asset-item id="TwoOfSwords" src="Assets\glb\TwoOfSwords.glb"></a-asset-item>
+                <a-asset-item id="ThreeOfSwords" src="Assets\glb\ThreeOfSwords.glb"></a-asset-item>
+                <a-asset-item id="FourOfSwords" src="Assets\glb\FourOfSwords.glb"></a-asset-item>
+                <a-asset-item id="FiveOfSwords" src="Assets\glb\FiveOfSwords.glb"></a-asset-item>
+				<a-asset-item id="SixOfSwords" src="Assets\glb\SixOfSwords.glb"></a-asset-item>
+                <a-asset-item id="SevenOfSwords" src="Assets\glb\SevenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="EightOfSwords" src="Assets\glb\EightOfSwords.glb"></a-asset-item>
+                <a-asset-item id="NineOfSwords" src="Assets\glb\NineOfSwords.glb"></a-asset-item>
+                <a-asset-item id="TenOfSwords" src="Assets\glb\TenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="KnightOfSwords" src="Assets\glb\KnightOfSwords.glb"></a-asset-item>
+                <a-asset-item id="QueenOfSwords" src="Assets\glb\QueenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="KingOfSwords" src="Assets\glb\KingOfSwords.glb"></a-asset-item>
+                <a-asset-item id="PageOfSwords" src="Assets\glb\PageOfSwords.glb"></a-asset-item>
 			</a-assets>
             
 			<a-marker id="patt1" type="pattern" url="Assets\patterns\pattern-ACE.patt">
