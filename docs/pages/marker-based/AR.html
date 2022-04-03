@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 		<script src="https://rawcdn.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 	</head>
 
+
 	<body style='margin : 0px; overflow: hidden;'>
+		<div class='convo-bubble'></div>
+		
 		<a-scene
-		arjs="sourceType: webcam; debugUIEnabled: false;"
-		embedded
-		renderer="logarithmicDepthBuffer: true;"
-		vr-mode-ui="enabled: false"
-		id="scene">
+			arjs="sourceType: webcam; debugUIEnabled: false;"
+			embedded
+			renderer="logarithmicDepthBuffer: true;"
+			vr-mode-ui="enabled: false"
+			id="scene"
+			cursor="rayOrigin: mouse" accepts-clicks>
 
 			<a-assets>
 				<a-asset-item id="AceOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/63f215b34a18dc71ff54bd4a1720c0db4d1508c7/Assets/glb/AceOfSwords.glb"></a-asset-item>
