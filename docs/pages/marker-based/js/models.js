@@ -146,7 +146,7 @@ function initiateModels() {
       {
         name: 'INPageOfSwords',
         dialogue: 'Be mindful of your critical tendencies.  Analyze your possible prejudice, instead of the weakness of others',
-      },
+      }
     ];
 
     charactersArray.forEach(function(character){
