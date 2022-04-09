@@ -6,8 +6,8 @@
 	right: 10px;
 	left: 10px;
     min-height: 20%;
+	background-image: url('https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/jasmine-ar-test/docs/pages/marker-based/Assets/CardArt/tarotBubble.png');
 	background-color: #00aabb;
-	background-image:url('https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/jasmine-ar-test/docs/pages/marker-based/Assets/CardArt/tarotBubble.png');
 	background-size: cover;
 	background-position: center;
 	color: white;
