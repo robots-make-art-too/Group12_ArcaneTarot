@@ -1,5 +1,4 @@
-var characters = [],
-    tools = [];
+var characters = []
 
 function ARModel(name, dialogue) {
     this.name = name;
@@ -10,21 +9,12 @@ ARModel.prototype.speak = function() {
     return this.dialogue;
 }
 
-
 //Character model
-function Character(name, dialogue, tool, successDialogue) {
+function Character(name, dialogue) {
     ARModel.call(this, name, dialogue);
-    this.tool = tool;
-    this.successDialogue = successDialogue;
 }
 Character.prototype = Object.create(ARModel.prototype);
 
-
-//Tool model
-function Tool(name, dialogue) {
-    ARModel.call(this, name, dialogue);
-}
-Tool.prototype = Object.create(ARModel.prototype);
 
 // we would repeat an intialization step for each character we have
 // so the parts between { }, in the charactersArray = []
@@ -93,12 +83,11 @@ function initiateModels() {
     ];
 
     charactersArray.forEach(function(character){
-        characters.push(new Character(character.name, character.dialogue, character.tool, character.successDialogue));
-        if (character.tool) tools.push(character.tool);
-    });
+      characters.push(new Character(character.name, character.dialogue));
+  });
 
-    console.log('characters', characters);
-    console.log('tools', tools)
+  console.log('characters', characters);
 }
 
 initiateModels();
+
