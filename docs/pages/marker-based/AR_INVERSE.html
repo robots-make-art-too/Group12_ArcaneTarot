@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="textStyle.css">
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+		<script src="https://rawcdn.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+		<script type="text/javascript" src="js/gamerState.js"></script>
+		<script type="text/javascript" src="js/interaction.js"></script>
+		<script type="text/javascript" src="js/inverse_models.js"></script>
+	</head>
+
+		<body style='margin : 0px; overflow: hidden;'>
+			<div class='convo-bubble'></div>
+			
+			<a-scene
+				arjs="sourceType: webcam; debugUIEnabled: false;"
+				embedded
+				renderer="logarithmicDepthBuffer: true;"
+				vr-mode-ui="enabled: false"
+				id="scene"
+				cursor="rayOrigin: mouse" accepts-clicks>
+
+			<a-assets>
+				<a-asset-item id="AceOfSwords" src="Assets\glb\AceOfSwords.glb"></a-asset-item>
+                <a-asset-item id="TwoOfSwords" src="Assets\glb\TwoOfSwords.glb"></a-asset-item>
+                <a-asset-item id="ThreeOfSwords" src="Assets\glb\ThreeOfSwords.glb"></a-asset-item>
+                <a-asset-item id="FourOfSwords" src="Assets\glb\FourOfSwords.glb"></a-asset-item>
+                <a-asset-item id="FiveOfSwords" src="Assets\glb\FiveOfSwords.glb"></a-asset-item>
+				<a-asset-item id="SixOfSwords" src="Assets\glb\SixOfSwords.glb"></a-asset-item>
+                <a-asset-item id="SevenOfSwords" src="Assets\glb\SevenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="EightOfSwords" src="Assets\glb\EightOfSwords.glb"></a-asset-item>
+                <a-asset-item id="NineOfSwords" src="Assets\glb\NineOfSwords.glb"></a-asset-item>
+                <a-asset-item id="TenOfSwords" src="Assets\glb\TenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="KnightOfSwords" src="Assets\glb\KnightOfSwords.glb"></a-asset-item>
+                <a-asset-item id="QueenOfSwords" src="Assets\glb\QueenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="KingOfSwords" src="Assets\glb\KingOfSwords.glb"></a-asset-item>
+                <a-asset-item id="PageOfSwords" src="Assets\glb\PageOfSwords.glb"></a-asset-item>
+
+		
+			</a-assets>
+            
+
+            <!---------------------------------------------------------------------------INVERTS--------------------------------------------------------------------------->
+
+			<a-marker id="INAceOfSwords-marker" type="pattern" url="Assets\patterns\pattern-ACE INVERT.patt">
+				<a-entity id="INAceOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INAceOfSwords"></a-entity>
+			</a-marker>
+		
+			<a-marker id="INTenOfSwords-marker" type="pattern" url="Assets\patterns\pattern-TWO INVERT.patt">
+				<a-entity id="INTwoOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INTwoOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INThreeOfSwords-marker" type="pattern" url="Assets\patterns\pattern-THREE INVERT.patt">
+				<a-entity id="INThreeOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INThreeOfSwords"></a-entity>
+			</a-marker>
+		
+			<a-marker id="INFourOfSwords-marker" type="pattern" url="Assets\patterns\pattern-FOUR INVERT.patt">
+				<a-entity id="INFourOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INFourOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INFiveOfSwords-marker" type="pattern" url="Assets\patterns\pattern-FIVE INVERT.patt">
+				<a-entity id="INFiveOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INFiveOfSwords"></a-entity>
+			</a-marker>
+			
+			<a-marker id="INSixOfSwords-marker" type="pattern" url="Assets\patterns\pattern-SIX INVERT.patt">
+				<a-entity id="INSixOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INSixOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INSevenOfSwords-marker" type="pattern" url="Assets\patterns\pattern-SEVEN INVERT.patt">
+				<a-entity id="INSevenOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INSevenOfSwords"></a-entity>
+			</a-marker>
+		
+			<a-marker id="INEightOfSwords-marker" type="pattern" url="Assets\patterns\pattern-EIGHT INVERT.patt">
+				<a-entity id="INEightOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INEightOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INNineOfSwords-marker" type="pattern" url="Assets\patterns\pattern-NINE INVERT.patt">
+				<a-entity id="INNineOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INNineOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INTenOfSwords-marker" type="pattern" url="Assets\patterns\pattern-TEN INVERT.patt">
+				<a-entity id="INTenOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INTenOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INKnightOfSwords-marker" type="pattern" url="Assets\patterns\pattern-KNIGHT INVERT.patt">
+				<a-entity id="INKnightOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INKnightOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INQueenOfSwords-marker" type="pattern" url="Assets\patterns\pattern-QUEEN INVERT.patt">
+				<a-entity id="INQueenOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INQueenOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INKingOfSwords-marker" type="pattern" url="Assets\patterns\pattern-KING INVERT.patt">
+				<a-entity id="INKingOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INKingOfSwords"></a-entity>
+			</a-marker>
+			<a-marker id="INPageOfSwords-marker" type="pattern" url="Assets\patterns\pattern-PAGE INVERT.patt">
+				<a-entity id="INPageOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#INPageOfSwords"></a-entity>
+			</a-marker> 
+
+			<a-entity camera></a-entity>
+
+		</a-scene>
+
+
+	</body>
+
+
+</htlm>
+
+
+
+
+
