@@ -1,136 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="textStyle.css">
 		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+		<script src="https://rawcdn.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+		<script type="text/javascript" src="js/gamerState.js"></script>
+		<script type="text/javascript" src="js/interaction.js"></script>
+		<script type="text/javascript" src="js/models.js"></script>
 	</head>
 
-	<body style='margin : 0px; overflow: hidden;'>
-		<a-scene
-		arjs="sourceType: webcam; debugUIEnabled: false;"
-		embedded
-		renderer="logarithmicDepthBuffer: true;"
-		vr-mode-ui="enabled: false"
-		id="scene">
+		<body style='margin : 0px; overflow: hidden;'>
+			<div class='convo-bubble'></div>
+			
+			<a-scene
+				arjs="sourceType: webcam; debugUIEnabled: false;"
+				embedded
+				renderer="logarithmicDepthBuffer: true;"
+				vr-mode-ui="enabled: false"
+				id="scene"
+				cursor="rayOrigin: mouse" accepts-clicks>
 
 			<a-assets>
-				<a-asset-item id="AceOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/63f215b34a18dc71ff54bd4a1720c0db4d1508c7/Assets/glb/AceOfSwords.glb"></a-asset-item>
-				<a-asset-item id="TwoOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/glb/TwoOfSwords.glb"></a-asset-item>
-				<a-asset-item id="ThreeOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/glb/ThreeOfSwords.glb"></a-asset-item>
-				<a-asset-item id="FourOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/63f215b34a18dc71ff54bd4a1720c0db4d1508c7/Assets/glb/FourOfSwords.glb"></a-asset-item>
-				<a-asset-item id="FiveOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/63f215b34a18dc71ff54bd4a1720c0db4d1508c7/Assets/glb/FiveOfSwords.glb"></a-asset-item>
-				<a-asset-item id="SixOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/glb/SixOfSwords.glb"></a-asset-item>
-				<a-asset-item id="SevenOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/glb/SevenOfSwords.glb"></a-asset-item>
-				<a-asset-item id="EightOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/EightOfSwords.glb"></a-asset-item>
-				<a-asset-item id="NineOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/NineOfSwords.glb"></a-asset-item>
-				<a-asset-item id="TenOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/4765d64cff524fc8cb08c8dd0ecff8a094c60c25/Assets/glb/TenOfSwords.glb"></a-asset-item>
-				<a-asset-item id="KnightOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/KnightOfSwords.glb"></a-asset-item>
-				<a-asset-item id="QueenOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/QueenOfSwords.glb"></a-asset-item>
-				<a-asset-item id="KingOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/KingOfSwords.glb"></a-asset-item>
-				<a-asset-item id="PageOfSwords" src="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/5023b179947a330a36e90b012dce8451f8dfadb4/Assets/glb/PageOfSwords.glb"></a-asset-item>
+
+
+				<a-asset-item id="AceOfSwords" src="Assets/glb/AceOfSwords.glb"></a-asset-item>
+                <a-asset-item id="TwoOfSwords" src="Assets/glb/TwoOfSwords.glb"></a-asset-item>
+                <a-asset-item id="ThreeOfSwords" src="Assets/glb/ThreeOfSwords.glb"></a-asset-item>
+                <a-asset-item id="FourOfSwords" src="Assets/glb/FourOfSwords.glb"></a-asset-item>
+                <a-asset-item id="FiveOfSwords" src="Assets/glb/FiveOfSwords.glb"></a-asset-item>
+				<a-asset-item id="SixOfSwords" src="Assets/glb/SixOfSwords.glb"></a-asset-item>
+                <a-asset-item id="SevenOfSwords" src="Assets/glb/SevenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="EightOfSwords" src="Assets/glb/EightOfSwords.glb"></a-asset-item>
+                <a-asset-item id="NineOfSwords" src="Assets/glb/NineOfSwords.glb"></a-asset-item>
+                <a-asset-item id="TenOfSwords" src="Assets/glb/TenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="KnightOfSwords" src="Assets/glb/KnightOfSwords.glb"></a-asset-item>
+                <a-asset-item id="QueenOfSwords" src="Assets/glb/QueenOfSwords.glb"></a-asset-item>
+                <a-asset-item id="KingOfSwords" src="Assets/glb/KingOfSwords.glb"></a-asset-item>
+                <a-asset-item id="PageOfSwords" src="Assets/glb/PageOfSwords.glb"></a-asset-item>
 			</a-assets>
             
-			<a-marker id="patt1" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-ACE.patt">
-				<a-entity id="AceOfSwords-gtlf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#AceOfSwords"></a-entity>
+			<a-marker id="AceOfSwords-marker" type="pattern" url="Assets\patterns\pattern-ACE.patt">
+				<a-entity id="AceOfSwords-gltf" position="0.5 0.5 0" rotation="270 180 0" scale="3 3 3" gltf-model="#AceOfSwords"></a-entity>
 			</a-marker>
-			<!--
-			<a-marker id="patt2" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-TWO.patt">
-				<a-entity id="TwoOfSwords-gtlf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#TwoOfSwords"></a-entity>
+			
+			<a-marker id="TwoOfSwords-marker" type="pattern" url="Assets\patterns\pattern-TWO.patt">
+				<a-entity id="TwoOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#TwoOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt3" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-THREE.patt">
-				<a-entity id="ThreeOfSwords-gtlf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#ThreeOfSwords"></a-entity>
+			<a-marker id="ThreeOfSwords-marker" type="pattern" url="Assets\patterns\pattern-THREE.patt">
+				<a-entity id="ThreeOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#ThreeOfSwords"></a-entity>
 			</a-marker>
-			-->
-			<a-marker id="patt4" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-FOUR.patt">
-				<a-entity id="FourOfSwords-gtlf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#FourOfSwords"></a-entity>
+			
+			<a-marker id="FourOfSwords-marker" type="pattern" url="Assets\patterns\pattern-FOUR.patt">
+				<a-entity id="FourOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#FourOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt5" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-FIVE.patt">
-				<a-entity id="FiveOfSwords-gtlf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#FiveOfSwords"></a-entity>
+			<a-marker id="FiveOfSwords-marker" type="pattern" url="Assets\patterns\pattern-FIVE.patt">
+				<a-entity id="FiveOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#FiveOfSwords"></a-entity>
 			</a-marker>
-			<!--
-			<a-marker id="patt6" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-SIX.patt">
-				<a-entity id="SixOfSwords" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#SixOfSwords"></a-entity>
+		
+			<a-marker id="SixOfSwords-marker" type="pattern" url="Assets\patterns\pattern-SIX.patt">
+				<a-entity id="SixOfSwords-gltf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#SixOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt7" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-SEVEN.patt">
-				<a-entity id="SevenOfSwords" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#SevenOfSwords"></a-entity>
+			<a-marker id="SevenOfSwords-marker" type="pattern" url="Assets\patterns\pattern-SEVEN.patt">
+				<a-entity id="SevenOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#SevenOfSwords"></a-entity>
 			</a-marker>
-            -->
-			<a-marker id="patt8" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-EIGHT.patt">
+       
+			<a-marker id="EightOfSwords-marker" type="pattern" url="Assets\patterns\pattern-EIGHT.patt">
 				<a-entity id="EightOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#EightOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt9" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-NINE.patt">
+			<a-marker id="NineOfSwords-marker" type="pattern" url="Assets\patterns\pattern-NINE.patt">
 				<a-entity id="NineOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#NineOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt10" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-TEN.patt">
-				<a-entity id="TenOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#TenOfSwords"></a-entity>
+			<a-marker id="TenOfSwords-marker" type="pattern" url="Assets\patterns\pattern-TEN.patt">
+				<a-entity id="TenOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="3 3 3" gltf-model="#TenOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt11" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-KNIGHT.patt">
-				<a-entity id="KnightOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#KnightOfSwords"></a-entity>
+			<a-marker id="KnightOfSwords-marker" type="pattern" url="Assets\patterns\pattern-KNIGHT.patt">
+				<a-entity id="KnightOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="5 5 5" gltf-model="#KnightOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt12" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-QUEEN.patt">
-				<a-entity id="QueenOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#QueenOfSwords"></a-entity>
+			<a-marker id="QueenOfSwords-marker" type="pattern" url="Assets\patterns\pattern-QUEEN.patt">
+				<a-entity id="QueenOfSwords-gltf" position="-1 0 0" rotation="270 180 0" scale="10 10 10" gltf-model="#QueenOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt13" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-KING.patt">
+			<a-marker id="KingOfSwords-marker" type="pattern" url="Assets\patterns\pattern-KING.patt">
 				<a-entity id="KingOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#KingOfSwords"></a-entity>
 			</a-marker>
-			<a-marker id="patt14" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-PAGE.patt">
-				<a-entity id="PageOfSwords-gltf" position="0 0.5 0" rotation="270 180 0" scale="10 10 10" gltf-model="#PageOfSwords"></a-entity>
+			<a-marker id="PageOfSwords-marker" type="pattern" url="Assets\patterns\pattern-PAGE.patt">
+				<a-entity id="PageOfSwords-gltf" position="0 0-1 0" rotation="270 180 0" scale="5 5 5" gltf-model="#PageOfSwords"></a-entity>
 			</a-marker>
 
-            <!---------------------------------------------------------------------------INVERTS--------------------------------------------------------------------------->
-
-			<a-marker id="patt1IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-ACE%20INVERT.patt">
-				<a-entity id="AceOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#AceOfSwords"></a-entity>
-			</a-marker>
-			<!--
-			<a-marker id="patt2IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-TWO%20INVERT.patt">
-				<a-entity id="TwoOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#TwoOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt3IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-THREE%20INVERT.patt">
-				<a-entity id="ThreeOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#ThreeOfSwords"></a-entity>
-			</a-marker>
-			-->
-			<a-marker id="patt4IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-FOUR%20INVERT.patt">
-				<a-entity id="FourOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#FourOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt5IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-FIVE%20INVERT.patt">
-				<a-entity id="FiveOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#FiveOfSwords"></a-entity>
-			</a-marker>
-			<!--
-			<a-marker id="patt6IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-SIX%20INVERT.patt">
-				<a-entity id="SixOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#SixOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt7IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-SEVEN%20INVERT.patt">
-				<a-entity id="SevenOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#SevenOfSwords"></a-entity>
-			</a-marker>
-			-->
-			<a-marker id="patt8IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-EIGHT%20INVERT.patt">
-				<a-entity id="EightOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#EightOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt9IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-NINE%20INVERT.patt">
-				<a-entity id="NineOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#NineOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt10IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-TEN%20INVERT.patt">
-				<a-entity id="TenOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#TenOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt11IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-KNIGHT%20INVERT.patt">
-				<a-entity id="KnightOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#KnightOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt12IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-QUEEN%20INVERT.patt">
-				<a-entity id="QueenOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#QueenOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt13IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-KING%20INVERT.patt">
-				<a-entity id="KingOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#KingOfSwords"></a-entity>
-			</a-marker>
-			<a-marker id="patt14IN" type="pattern" url="https://raw.githack.com/robots-make-art-too/Group12_ArcaneTarot/main/Assets/PATTERNS/pattern-PAGE%20INVERT.patt">
-				<a-entity id="PageOfSwords-gtlf" position="0 0.5 0" rotation="270 180 180" scale="10 10 10" gltf-model="#PageOfSwords"></a-entity>
-			</a-marker>
-
+    
 			<a-entity camera></a-entity>
+
 		</a-scene>
+
+
 	</body>
+
+
 </htlm>
+
 
 
 
