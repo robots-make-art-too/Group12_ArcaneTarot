@@ -39,55 +39,55 @@ function initiateModels() {
         },
         {
           name: 'TwoOfSwords',
-          dialogue: '"Wait until the timing is right and all the facts are clear before taking action.',
+          dialogue: '"Wait until the timing is right and all the facts are clear before taking action.'
         },
         {
           name: 'ThreeOfSwords',
-          dialogue: 'It might be healthier to disentangle yourself and start fresh',
+          dialogue: 'It might be healthier to disentangle yourself and start fresh'
         },
         {
           name: 'FourOfSwords',
-          dialogue: 'Concentrate less on the opinions and biases of others. Be open to intuition and insight from a deeper source.',
+          dialogue: 'Concentrate less on the opinions and biases of others. Be open to intuition and insight from a deeper source.'
         },
         {
           name: 'FiveOfSwords',
-          dialogue: 'Challenge the pessimism of others around you by evoking their higher nature',
+          dialogue: 'Challenge the pessimism of others around you by evoking their higher nature'
         },
         {
           name: 'SixOfSwords',
-          dialogue: 'Others will be grateful that you responded quickly to the need for immediate action.',
+          dialogue: 'Others will be grateful that you responded quickly to the need for immediate action.'
         },
         {
           name: 'SevenOfSwords',
-          dialogue: 'Discipline yourself to stay focused on the desired outcome and you will make your way past all competing circumstances.',
+          dialogue: 'Discipline yourself to stay focused on the desired outcome and you will make your way past all competing circumstances.'
         },
         {
           name: 'EightOfSwords',
-          dialogue: 'Rise to the occasion with confidence in your talent and ability.',
+          dialogue: 'Rise to the occasion with confidence in your talent and ability.'
         },
         {
           name: 'NineOfSwords',
-          dialogue: 'Honestly admit to yourself that you have sacrificed time and energy on a situation that simply does not work.',
+          dialogue: 'Honestly admit to yourself that you have sacrificed time and energy on a situation that simply does not work.'
         },
         {
           name: 'TenOfSwords',
-          dialogue: 'Protect yourself while the storm rages and focus on rebuilding after it passes.',
+          dialogue: 'Protect yourself while the storm rages and focus on rebuilding after it passes.'
         },
         {
           name: 'KnightOfSwords',
-          dialogue: 'Refine your communication and negotiation skills so you are at peak effectiveness.',
+          dialogue: 'Refine your communication and negotiation skills so you are at peak effectiveness.'
         },
         {
           name: 'QueenOfSwords',
-          dialogue: 'Make your own decisions. Exercise as much independence as you know you can handle.',
+          dialogue: 'Make your own decisions. Exercise as much independence as you know you can handle.'
         },
         {
           name: 'KingOfSwords',
-          dialogue: 'Listen to the inner wisdom offered by the wise elder that dwells inside of you.',
+          dialogue: 'Listen to the inner wisdom offered by the wise elder that dwells inside of you.'
         },
         {
           name: 'PageOfSwords',
-          dialogue: 'Circumstances call for anonymous action even if you would prefer to receive credit.',
+          dialogue: 'Circumstances call for anonymous action even if you would prefer to receive credit.'
         }
        
     ];
