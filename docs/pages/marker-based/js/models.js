@@ -1,4 +1,4 @@
-var characters = [],
+var characters = []
 
 function ARModel(name, dialogue) {
     this.name = name;
@@ -83,10 +83,11 @@ function initiateModels() {
     ];
 
     charactersArray.forEach(function(character){
-        characters.push(new Character(character.name, character.dialogue);
-    });
+      characters.push(new Character(character.name, character.dialogue));
+  });
 
-    console.log('characters', characters);
+  console.log('characters', characters);
 }
 
 initiateModels();
+
