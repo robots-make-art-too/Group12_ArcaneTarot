@@ -1,26 +1,20 @@
 .convo-bubble {
-	position: relative;
+	position: absolute;
+	width: 80%;
+	margin: 0 auto;
+	bottom: 50px;
+	right: 10px;
+	left: 10px;
+    min-height: 20%;
 	background: #00aabb;
-	border-radius: .4em;
 	background-image:url(CardArt/tarotBubble.png);
 	color: white;
 	font-size: 28px;
     border-radius: .4em;
+	padding: 20px;
+    display: none;
 }
 
-.convo-bubble:after {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 27px solid transparent;
-	border-left-color: #00aabb;
-	border-right: 0;
-	margin-top: -27px;
-	margin-right: -27px;
-}
 
 #arjsDebugUIContainer {
     display: none;
