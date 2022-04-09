@@ -8,6 +8,8 @@
     min-height: 20%;
 	background: #00aabb;
 	background-image:url(CardArt/tarotBubble.png);
+	background-size: cover;
+	background-position: center;
 	color: white;
 	font-size: 28px;
     border-radius: .4em;
