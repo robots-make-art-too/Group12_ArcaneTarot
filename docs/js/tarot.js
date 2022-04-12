@@ -1,4 +1,4 @@
-function Card(name, description, image, reverse, reverseDesc, inspection){
+function Card(name, description, image, reverse, reverseDesc, inspection, inspectionReverse){
     this.name = name;
     this.desc = description;
     this.img = image;
