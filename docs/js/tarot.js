@@ -88,9 +88,10 @@ function reset(){
 function card1desc(){
     if(card1 != -1){
         if(card1orientation == 0){
-            modalDisplay(deck[card1].name, deck[card1].desc, document.getElementById("card1").src);
+            
+            modalDisplay(deck[card1].name, deck[card1].desc, document.getElementById("enlargeCard").scr = deck[card1].inspection);
         }else if(card1orientation == 1){
-            modalDisplay(deck[card1].name + " (REVERSE)", deck[card1].reverseDesc, document.getElementById("card1").src);
+            modalDisplay(deck[card1].name + " (REVERSE)", deck[card1].reverseDesc, document.getElementById("enlargeCard").src = deck[card1].inspectionReverse);
         }
     }
 }
@@ -98,9 +99,9 @@ function card1desc(){
 function card2desc(){
     if(card2 != -1){
         if(card2orientation == 0){
-            modalDisplay(deck[card2].name, deck[card2].desc, document.getElementById("card2").src);
+            modalDisplay(deck[card2].name, deck[card2].desc, document.getElementById("enlargeCard").src = deck[card2].inspection);
         }else if(card2orientation == 1){
-            modalDisplay(deck[card2].name + " (REVERSE)", deck[card2].reverseDesc, document.getElementById("card2").src);
+            modalDisplay(deck[card2].name + " (REVERSE)", deck[card2].reverseDesc, document.getElementById("enlargeCard").src = deck[card2].inspectionReverse);
         }
     }
 }
@@ -108,9 +109,9 @@ function card2desc(){
 function card3desc(){
     if(card3 != -1){
         if(card3orientation == 0){
-            modalDisplay(deck[card3].name, deck[card3].desc, document.getElementById("card3").src);
+            modalDisplay(deck[card3].name, deck[card3].desc, document.getElementById("enlargeCard").src = deck[card3].inspection);
         }else if(card3orientation == 1){
-            modalDisplay(deck[card3].name + " (REVERSE)", deck[card3].reverseDesc, document.getElementById("card3").src);
+            modalDisplay(deck[card3].name + " (REVERSE)", deck[card3].reverseDesc, document.getElementById("enlargeCard").src = deck[card3].inspectionReverse);
         }
     }
 }
